@@ -121,7 +121,8 @@ public PriorityQueue(SortedSet<? extends E> c) {
 
 3.获取堆顶元素
 ```
-// 直接数组返回// 也可以使用 element()，是 abstractQueue 的方法，调用的也是 peek() 再一次感受到多态对象的强大public E peek() {
+// 直接数组返回// 也可以使用 element()，是 abstractQueue 的方法，调用的也是 peek() 
+public E peek() {
         return (size == 0) ? null : (E) queue[0];
     }
 ```
